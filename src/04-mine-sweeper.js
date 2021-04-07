@@ -21,8 +21,10 @@
  *  [1, 1, 1]
  * ]
  */
-function minesweeper(/* matrix */) {
-  throw new Error('Not implemented');
+function minesweeper(matrix) {
+  const width = matrix[0].length;
+  let height = matrix.length;
+
 }
 
-module.exports = minesweeper;
+// module.exports = minesweeper;
