@@ -18,16 +18,18 @@
  */
 
 function removeKFromList(l, k) {
-  while (l.value === k) {
-    l = l.next; // eslint-disable-line no-param-reassign
+  let object = {};
+  Object.assign(object, l);
+  while (object.value === k) {
+    object = object.next;
   }
-  let node = l;
+  let node = object;
   while (node.next) {
     if (node.next.value === k) {
       node.next = node.next.next;
     }
     node = node.next;
   }
-  return l;
+  return object;
 }
 module.exports = removeKFromList;
