@@ -14,7 +14,6 @@ function encodeLine(str) {
   array.reduce((accum, letter, index) => {
     if (accum.includes(letter) || accum.length === 0) {
       accum.push(letter);
-      console.log(accum);
       if (index === (array.length - 1)) {
         if (accum.length > 1) {
           res.push(`${accum.length}${accum[0]}`);
